@@ -8,3 +8,7 @@ function fuzzyMatch(drivers, query){
     return query.toUpperCase() === n.slice(0, query.length).toUpperCase();
   })
 }
+
+function matchName(drivers, query){
+  return drivers.filter(o => o.name === query)
+}
